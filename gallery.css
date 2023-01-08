@@ -60,6 +60,9 @@ h1 {
   margin-left: 10px;
   display: inline-block;
 }
+a {
+  color: black;
+}
 #section {
   width: 1000px;
   float: left;
@@ -78,9 +81,7 @@ h1 {
   color: white;
   font-size: 30px;
   float: right;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  margin-top: 353.2px;
+  margin: 353.2px 10px 10px 0;
 }
 .article2 {
   width: 290px;
@@ -138,6 +139,12 @@ h1 {
   float: left;
   overflow: hidden;
   background-image: url("490x240-2.png");
+}
+.article4-2 span {
+  font-size: 30px;
+  color: gold;
+  float: right;
+  margin: 173.2px 20px 30px 0;
 }
 .article5 {
   width: 500px;
