@@ -1,7 +1,17 @@
 * { margin: 0; padding: 0;}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
 body {
   font-family: 'Verdana'; color: black;
 }
+
 
 #header {
   width:  100%;
@@ -11,63 +21,62 @@ body {
   top: 0;
   border-bottom: 2px solid;
 }
-.header_box {
+.h_innerbox {
   width: 1180px;
   height: 120px;
-  margin: auto;
+  margin: 0 auto;
+  position: relative;
 }
 
-.utility_bar {
-  float: right;
-  margin-top: 20px;
+.h_innerbox h1 > a {
+  color: black;
+}
+
+utilitybar {
   color: gray;
-}
-.utility_bar  ul{
-  list-style: none;
-  overflow: hidden;
-  margin-left: 580px;
-}
-
-.utility_bar  li{
-  float: left;
-  margin-right: 30px;
-}
-
-.global_navigation_bar {
-  margin-right: 0px;
-  margin-bottom: 0px;
-}
-
-.global_navigation_bar ul{
-  list-style: none;
-  overflow: hidden;
   float: right;
-  margin-right: 0;
-  margin-bottom: 0;
+  position: relative;
+  right: 30px;
+  top: 20px;
 }
 
-.global_navigation_bar ul li{
+utilitybar>ul>li {
   float: left;
-  padding: 40px 40px 10px;
+  padding-left: 20px;
 }
-.global_navigation_bar ul li a{
+
+utilitybar>ul>li:hover {
+  color: red;
+}
+
+.h_innerbox h1 {
+  position: absolute;
+  left: 10px;
+  bottom: 15px;
+}
+
+global_navigation {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
   color: black;
-  text-decoration-line: none;
+  overflow: hidden;
 }
-h1 {
-  margin-top: 66.6px;
-  margin-bottom: 15px;
-  margin-left: 10px;
-  display: inline-block;
+
+global_navigation>ul>li {
+  float: left;
+  padding: 0 30px 14px 55px;
 }
-a {
+
+global_navigation>ul>li>a {
   color: black;
 }
+
 #section {
   width: 1000px;
+  overflow: hidden;
   float: left;
   margin: 130px 244.8px 0;
-
 }
 .article1 {
   width: 700px;
@@ -76,77 +85,82 @@ a {
   float: left;
   background-image: url("700x400.png");
   margin-bottom: 10px;
+  margin-right: 10px;
+  position: relative;
 }
 .article1 span {
   color: white;
   font-size: 30px;
-  float: right;
-  margin: 353.2px 10px 10px 0;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
 }
-.article2 {
+ .article2 {
   width: 290px;
   height: 190px;
-  float: left;
   overflow: hidden;
   background-image: url("290x190.png");
   margin-left: 10px;
   margin-bottom: 10px;
+  position: relative;
 }
 .article2 p {
   color: white;
-  margin-top: 50px;
-  margin-left: 10px;
+  position: absolute;
+  top: 50px;
+  left: 10px;
 }
-.article3-1 {
+ .article3-1 {
   width: 290px;
   height: 95px;
-  float: left;
   overflow: hidden;
   background-image: url("290x95-1.png");
-  margin-left: 10px;
   margin-bottom: 10px;
+  position: relative;
 }
 .article3-1 span {
   color: white;
-  margin-right: 10px;
-  margin-top: 64.8px;
-  float: right;
+  position: absolute;
+  right: 10px;
+  bottom: 20px;
 }
-.article3-2 {
+ .article3-2 {
   width: 290px;
   height: 95px;
-  float: left;
   overflow: hidden;
   background-image: url("290x95-2.png");
-  margin-left: 10px;
 }
-.article4-1 {
+ .article4-1 {
   width: 490px;
   height: 240px;
-  float: left;
   overflow: hidden;
+  float: left;
   margin-right: 10px;
   margin-bottom: 10px;
   background-image: url("490x240-1.png");
+  position: relative; 
 }
 .article4-1 h5 {
   width: 300px;
-  margin: 160px 95px;
+  position: absolute;
+  top: 160px;
+  left: 110px;
 }
-.article4-2 {
+ .article4-2 {
   width: 490px;
   height: 240px;
-  float: left;
   overflow: hidden;
   background-image: url("490x240-2.png");
+  position: relative;
 }
 .article4-2 span {
   font-size: 30px;
   color: gold;
-  float: right;
-  margin: 173.2px 20px 30px 0;
+  position: absolute;
+  right: 20px;
+  bottom: 30px;
 }
-.article5 {
+ .article5 {
   width: 500px;
   height: 490px;
   float: right;
@@ -173,6 +187,7 @@ a {
   float: left;
   overflow: hidden;
   background-image: url("1000x361.png");
+  position:relative;
 }
 .article7 .inner {
   width: 450px;
@@ -180,7 +195,9 @@ a {
   font-size: 20px;
   color: white;
   float: right;
-  margin: 171px 30px 40px 0;
+  position: absolute;
+  right: 30px;
+  bottom: 40px;
 }
 .inner span {
   font-size: 30px;
