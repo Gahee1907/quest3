@@ -20,7 +20,7 @@ body {
   position: fixed;
   top: 0;
   border-bottom: 2px solid;
-  
+  z-index: 1;
 }
 .h_innerbox {
   width: 1180px;
