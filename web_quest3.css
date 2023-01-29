@@ -12,12 +12,11 @@ body {
   font-family: 'Verdana'; color: black;
 }
 
-#header {
-  width: 100%;
-  overflow: hidden;
-  background: white;
+header {
+  width:  100%;
+  height: 118px;
+  background-color: white;
 }
-
 .h_innerbox {
   width: 1180px;
   height: 120px;
@@ -25,7 +24,11 @@ body {
   position: relative;
 }
 
-utilitybar {
+.h_innerbox h1 > a {
+  color: black;
+}
+
+.utilitybar {
   color: gray;
   float: right;
   position: relative;
@@ -33,12 +36,12 @@ utilitybar {
   top: 20px;
 }
 
-utilitybar>ul>li {
+.utilitybar li {
   float: left;
   padding-left: 20px;
 }
 
-utilitybar>ul>li:hover {
+.utilitybar li:hover {
   color: red;
 }
 
@@ -48,19 +51,21 @@ utilitybar>ul>li:hover {
   bottom: 15px;
 }
 
-global_navigation {
+.global_navigation {
   position: absolute;
   right: 0px;
   bottom: 0px;
+  color: black;
+  overflow: hidden;
 }
 
-global_navigation>ul>li {
+.global_navigation li {
   float: left;
   padding: 0 30px 14px 55px;
 }
 
-global_navigation>ul>li>a {
-  color: black;
+.global_navigation li:nth-child(2) a:visited {
+  color:#000;
 }
 
 #main_image {
@@ -70,17 +75,18 @@ global_navigation>ul>li>a {
   background-image: url(bg_main.png);
 }
 
-main_innerbox {
+.main_innerbox {
   width: 800px;
   height: 300px;
   color: white;
   font-size: 25px;
   position: absolute;
   top: 150px;
-  left: 336.4px;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 
-main_innerbox > p {
+.main_innerbox p {
   font-size: 80px;
 }
 
@@ -93,12 +99,6 @@ main_innerbox > p {
 #section div {
   margin: 55px auto;
   text-align: center;
-}
-
-article p {
-  width:230px;
-  float: left;
-  margin: 0 32.5px;
 }
 
 #footer {
@@ -116,24 +116,24 @@ article p {
   position: relative;
 }
 
-.foot_innerbox > h1 {
+.foot_innerbox  h1 {
   position: absolute;
   left: 10px;
   bottom: 15px;
 }
 
-.foot_innerbox > ul {
+.foot_innerbox  ul {
   position: absolute;
   right: 20px;
   bottom: 15px;
 }
 
-.foot_innerbox > ul > li {
+.foot_innerbox  ul  li {
   float: left;
   padding-left: 20px;
 }
 
-.foot_innerbox > ul > li:hover {
+.foot_innerbox  ul  li:hover {
   color: red;
 }
 

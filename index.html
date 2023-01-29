@@ -4,37 +4,48 @@
     <title>Web_03_main</title>
     <link rel="stylesheet" type="text/css" href="web_quest3.css">
   </head>
+  <style>
+    article {
+      float: left
+    }
+    article:nth-child(1) img, article:nth-child(2), article:nth-child(3)img, article:nth-child(4) img {
+      display: block;
+      width: 230px;
+      height: 163px;
+    }
+    article p{
+      float: left;
+      width:230px;
+      margin: 0 32.5px;
+    }
+  </style>
   <body>
-    <div id="header">
+    <header>
       <div class="h_innerbox">
-        <utilitybar>
-          <ul>
-            <li>Contact</li>
-            <li>Help</li>
-            <li>Login</li>
-            <li>Join</li>
-            <li>Sitemap</li>
-          </ul>
-        </utilitybar>
-        <h1>WON LAP</h1>
-        <global_navigation>
-          <ul>
-            <li>DEPARTMENT</li>
-            <li><a href="gallery.html">GALLERY</a></li>
-            <li>YOUTUBE</li>
-            <li>COMMUNITY</li>
-            <li>LOCATION</li>
-          </ul>
-        </global_navigation>
+        <ul class="utilitybar">
+          <li>Contact</li>
+          <li>Help</li>
+          <li>Login</li>
+          <li>Join</li>
+          <li>Sitemap</li>
+      </ul>
+      <h1><a href="index.html">WON LAP</a></h1>
+        <ul class="global_navigation">
+          <li>DEPARTMENT</li>
+          <li><a href="gallery.html">GALLERY</a></li>
+          <li>YOUTUBE</li>
+          <li>COMMUNITY</li>
+          <li>LOCATION</li>
+        </ul>
       </div>
-    </div>
+    </header>
     <div id="main_image">
-      <main_innerbox>
-        <p>THE FUTURE</p>
+      <div class="main_innerbox">
+        <p><b>THE FUTURE</b></p>
         The World Wide Web (WWW), commonly known as the Web, is<br>
         an information system enabling documents and other web<br>
         resources to be accessed over the Internet.
-      </main_innerbox>
+      </div>
     </div>
     <div id="section">
       <div><b>RECENT NEWS</b></div>

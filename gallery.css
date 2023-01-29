@@ -13,7 +13,7 @@ body {
 }
 
 
-#header {
+header {
   width:  100%;
   height: 118px;
   background-color: white;
@@ -33,7 +33,7 @@ body {
   color: black;
 }
 
-utilitybar {
+.utilitybar {
   color: gray;
   float: right;
   position: relative;
@@ -41,12 +41,12 @@ utilitybar {
   top: 20px;
 }
 
-utilitybar>ul>li {
+.utilitybar li {
   float: left;
   padding-left: 20px;
 }
 
-utilitybar>ul>li:hover {
+.utilitybar li:hover {
   color: red;
 }
 
@@ -56,7 +56,7 @@ utilitybar>ul>li:hover {
   bottom: 15px;
 }
 
-global_navigation {
+.global_navigation {
   position: absolute;
   right: 0px;
   bottom: 0px;
@@ -64,140 +64,122 @@ global_navigation {
   overflow: hidden;
 }
 
-global_navigation>ul>li {
+.global_navigation li {
   float: left;
   padding: 0 30px 14px 55px;
 }
 
-global_navigation>ul>li>a {
-  color: black;
+.global_navigation li:nth-child(2) a:visited {
+  color:#000;
 }
 
-#section {
+
+section {
   width: 1000px;
-  overflow: hidden;
-  float: left;
-  margin: 130px 244.8px 0;
+  margin: 128px auto 0;
 }
-.article1 {
+
+article:nth-child(1){
+  margin-right:10px;
+  margin-bottom: 10px;
+}
+article:nth-child(2), article:nth-child(3){
+  margin-bottom:10px;
+}
+article:nth-child(5), article:nth-child(7){
+  margin-bottom:10px;
+  margin-right: 10px;
+}
+
+article:nth-child(6){
+  margin-bottom: 10px;
+  float: right;
+}
+
+article:nth-child(8){
+  margin-bottom: 10px;
+}
+
+article img {
+  display: block;
+}
+article:nth-child(1) img {
   width: 700px;
   height: 400px;
-  overflow: hidden;
-  float: left;
-  background-image: url("700x400.png");
-  margin-bottom: 10px;
-  margin-right: 10px;
-  position: relative;
 }
-.article1 p {
-  color: white;
-  font-size: 30px;
-  position: absolute;
-  right: 10px;
-  bottom: 10px;
-}
- .article2 {
+article:nth-child(2) img {
   width: 290px;
   height: 190px;
-  overflow: hidden;
-  background-image: url("290x190.png");
-  margin-left: 10px;
-  margin-bottom: 10px;
-  position: relative;
 }
-.article2 p {
-  color: white;
-  position: absolute;
-  top: 50px;
-  left: 10px;
-}
- .article3-1 {
+article:nth-child(3) img {
   width: 290px;
   height: 95px;
-  overflow: hidden;
-  background-image: url("290x95-1.png");
-  margin-bottom: 10px;
-  position: relative;
 }
-.article3-1 span {
-  color: white;
-  position: absolute;
-  right: 10px;
-  bottom: 20px;
-}
- .article3-2 {
-  width: 290px;
-  height: 95px;
-  overflow: hidden;
-  background-image: url("290x95-2.png");
-}
- .article4-1 {
+article:nth-child(5) img, article:nth-child(7) img {
   width: 490px;
   height: 240px;
-  overflow: hidden;
-  float: left;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  background-image: url("490x240-1.png");
-  position: relative; 
 }
-.article4-1 h5 {
-  width: 300px;
-  position: absolute;
-  top: 160px;
-  left: 110px;
-}
- .article4-2 {
-  width: 490px;
-  height: 240px;
-  overflow: hidden;
-  background-image: url("490x240-2.png");
-  position: relative;
-}
-.article4-2 span {
-  font-size: 30px;
-  color: gold;
-  position: absolute;
-  right: 20px;
-  bottom: 30px;
-}
- .article5 {
+article:nth-child(6) img {
   width: 500px;
   height: 490px;
-  float: right;
-  overflow: hidden;
-  background-image: url("500x490.png");
 }
-.article6 {
+article:nth-child(8) img {
   width: 1000px;
   height: 371px;
-  overflow: hidden;
-  margin: 10px 0;
-  background-image: url("1000x371.png");
 }
-.article6 p {
-  font-size: 50px;
-  color: white;
-  text-shadow: 1.5px 1.5px gray;
-  margin: 155.1px;
-}
-.article7 {
+article:nth-child(9) img {
   width: 1000px;
   height: 361px;
-  overflow: hidden;
-  background-image: url("1000x361.png");
-  position:relative;
 }
-.article7 .inner {
+
+article p {
+  position: absolute;
+}
+
+article:nth-child(1) p {
+  right: 10px;
+  bottom: 10px;
+  font-size: 30px;
+  color: white;
+}
+article:nth-child(2) p {
+  top: 50px;
+  left: 10px;
+  color: white;
+  
+}
+article:nth-child(3) p {
+  right: 10px;
+  bottom: 20px;
+  color: white;
+}
+article:nth-child(5) p {
+  width:300px;
+  top: 160px;
+  right: 95px;
+  color: black;
+}
+article:nth-child(7) p {
+  right: 20px;
+  bottom: 30px;
+  color: gold;
+  font-size: 30px;
+}
+article:nth-child(8) p {
+  text-shadow: 1.5px 1.5px grey;
+  color: white;
+  font-size: 50px;
+  top: 41%;
+  left: 17%;
+}
+article:nth-child(9) p {
   width: 450px;
   height: 150px;
-  font-size: 20px;
-  color: white;
-  float: right;
-  position: absolute;
   right: 30px;
   bottom: 40px;
+  color: white;
+  font-size: 20px;
 }
-.inner span {
+article:nth-child(9) p span{
   font-size: 30px;
 }
